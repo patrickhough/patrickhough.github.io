@@ -5,12 +5,8 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
-{% include base_path %}
-
-{% for post in site.publications reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<!-- TODO: Add publications in reverse chronological order. -->
+<!-- Format example:
+[Paper Title](https://eprint.iacr.org/xxxx/xxxx), Venue Year.
+Joint work with Co-Author One and Co-Author Two.
+-->
