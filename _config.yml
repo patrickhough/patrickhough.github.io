@@ -48,15 +48,16 @@ atom_feed:
 # Site Author
 author:
   name             : "Patrick Hough"
-  avatar           : # TODO: add profile photo, e.g. "profile.jpg"
+  avatar           : "patrickhough.png"
   bio              : "Postdoctoral Researcher in Cryptography"
   location         : "Munich, Germany"
-  employer         : "CODE Research Institute / Universität der Bundeswehr München"
-  googlescholar    : # TODO: add Google Scholar URL
-  orcid            : # TODO: add ORCID URL, e.g. "https://orcid.org/0000-0000-0000-0000"
-  email            : # TODO: add email address
+  employer         : "PACY / Research Institute CODE<br>Universität der Bundeswehr München"
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=EM27SWAAAAAJ"
+  orcid            : "https://orcid.org/0000-0003-4037-5512"
+  email            : "patrickhough@pm.me"
   github           : "patrickhough"
-  uri              : # TODO: add institutional profile URL
+  linkedin         : "patrickhough"
+  uri              : "https://www.unibw.de/pacy-en/team/patrick-hough-ph-d"
 
 # Reading Files
 include:

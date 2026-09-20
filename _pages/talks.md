@@ -3,15 +3,11 @@ layout: archive
 title: "Talks"
 permalink: /talks/
 author_profile: true
+published: false
 ---
 
-<!-- TODO: Add upcoming and past talks in reverse chronological order. -->
-<!-- Format example:
-## Upcoming Talks
+## 2023
 
-* "Talk Title" – Conference Name, Location, Month Year.
-
-## Past Talks
-
-* "[Talk Title](link-to-slides)" – Conference Name, Location, Month Year.
--->
+**[Post-Quantum Cryptography (and why I’m in the NT corridor)](https://www.maths.ox.ac.uk/events/past/654?page=1)**<br>
+Junior Number Theory Seminar, Mathematical Institute, University of Oxford<br>
+20 November 2023

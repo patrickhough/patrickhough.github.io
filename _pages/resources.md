@@ -3,6 +3,7 @@ layout: archive
 title: "Resources"
 permalink: /resources/
 author_profile: true
+published: false
 ---
 
 Cohen: [Cryptography Online Talks Calendar](https://www.ccs.neu.edu/~rancohen/cryptotalks.html)
