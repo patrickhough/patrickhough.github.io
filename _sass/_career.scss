@@ -1,0 +1,541 @@
+/* ========================================================================== 
+   CAREER TIMELINE
+   ========================================================================== */
+
+.career-timeline {
+  --career-line: #{$light-gray};
+  --career-node: #{$info-color};
+  position: relative;
+  max-width: 66rem;
+  margin: 2.5rem auto 1rem;
+  padding: 0.75rem 0 0.5rem;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: var(--career-line);
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -0.35rem;
+    left: 50%;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid var(--career-line);
+    border-left: 5px solid transparent;
+    transform: translateX(-50%);
+  }
+}
+
+.career-era {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(11.5rem, 1fr) minmax(17rem, 1.15fr) minmax(11.5rem, 1fr);
+  gap: 2.75rem;
+  align-items: center;
+  margin-bottom: 4rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.career-era--current {
+  margin-bottom: 3.25rem;
+}
+
+.career-era--transition {
+  min-height: 7rem;
+  margin-bottom: 3.25rem;
+}
+
+.career-node {
+  position: relative;
+
+  p {
+    margin: 0;
+  }
+}
+
+.career-node__content {
+  min-width: 0;
+}
+
+.career-node__content--main {
+  text-align: center;
+}
+
+.career-node__logo-heading {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1;
+}
+
+.career-node__logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-radius: $border-radius;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 120ms ease, transform 120ms ease;
+
+  &:visited,
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+
+  &:hover {
+    opacity: 0.78;
+    transform: translateY(-1px);
+  }
+
+  &:focus {
+    outline: 2px solid $info-color;
+    outline-offset: 4px;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: 0;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $info-color;
+    outline-offset: 4px;
+  }
+}
+
+.career-node__logo-link--main {
+  width: 8rem;
+  height: 3.25rem;
+  margin: 0 auto 0.35rem;
+}
+
+.career-node__logo-link--branch {
+  display: inline-flex;
+  width: auto;
+  height: auto;
+  margin-bottom: 0.25rem;
+}
+
+.career-node__logo-link--branch-wide {
+  width: auto;
+}
+
+.career-node__logo-link--branch-tall {
+  width: auto;
+  height: auto;
+}
+
+.career-node__logo-link--unibw {
+  width: 12rem;
+  height: 2.8rem;
+  margin-bottom: 0.35rem;
+}
+
+.career-node__logo {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.career-node__logo--unibw {
+  width: 11.65rem;
+  max-width: 100%;
+  max-height: 2.7rem;
+}
+
+.career-node__logo--hcvc {
+  width: 5rem;
+  max-width: 100%;
+  max-height: 1.55rem;
+}
+
+.career-node__logo--huawei {
+  width: 6.897rem;
+  max-width: 100%;
+  max-height: 2.057rem;
+}
+
+.career-node__logo--aist {
+  width: 6.27rem;
+  max-width: 100%;
+  max-height: 1.87rem;
+}
+
+.career-node__logo--bsi {
+  width: 2.7648rem;
+  max-width: 100%;
+  max-height: 2.5rem;
+}
+
+.career-node__logo--cybercrypt {
+  width: 7.535rem;
+  max-width: 100%;
+  max-height: 2.255rem;
+}
+
+.career-node__logo--dfinity {
+  width: 5.1rem;
+  max-width: 100%;
+  max-height: 2.85rem;
+}
+
+.career-node__logo--oxford {
+  width: 8rem;
+  max-width: 100%;
+  max-height: 3rem;
+}
+
+.career-node__logo--ibm {
+  width: 4.95rem;
+  max-width: 100%;
+  max-height: 2.365rem;
+}
+
+.career-node__logo--royal-holloway {
+  max-width: 7.4rem;
+  max-height: 3rem;
+}
+
+.career-node__logo--ucl {
+  max-width: 7.2rem;
+  max-height: 3rem;
+}
+
+.career-node--main {
+  grid-column: 2;
+  grid-row: 1;
+  z-index: 2;
+  padding: 1.15rem 1.25rem 1.2rem;
+  border: 1px solid $border-color;
+  border-top: 3px solid var(--career-node);
+  border-radius: $border-radius;
+  background: $background-color;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -0.5rem;
+    left: 50%;
+    width: 0.75rem;
+    height: 0.75rem;
+    border: 2px solid $background-color;
+    border-radius: 50%;
+    background: var(--career-node);
+    transform: translateX(-50%);
+  }
+
+  .career-node__role {
+    font-weight: 600;
+  }
+}
+
+.career-era--current .career-node--main {
+  padding-top: 0.6rem;
+}
+
+.career-branches {
+  display: grid;
+  grid-row: 1;
+  gap: 1.35rem;
+  align-self: center;
+}
+
+.career-branches--left {
+  grid-column: 1;
+
+  .career-node--branch {
+    padding: 0.75rem 1rem 0.75rem 0;
+    border-right: 2px solid var(--career-line);
+    text-align: right;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 2rem;
+      left: 100%;
+      width: 2.75rem;
+      border-top: 1px solid var(--career-line);
+    }
+  }
+
+  .career-node__logo-heading {
+    text-align: right;
+  }
+}
+
+.career-branches--right {
+  grid-column: 3;
+
+  .career-node--branch {
+    padding: 0.75rem 0 0.75rem 1rem;
+    border-left: 2px solid var(--career-line);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2rem;
+      right: 100%;
+      width: 2.75rem;
+      border-top: 1px solid var(--career-line);
+    }
+  }
+
+  .career-node__logo-heading {
+    text-align: left;
+  }
+}
+
+.career-branches--continuing {
+  position: relative;
+}
+
+.career-node--ongoing {
+  border-left-color: var(--career-line) !important;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: -2px;
+    height: 12.5rem;
+    border-left: 2px solid var(--career-line);
+  }
+}
+
+.career-transition__junction {
+  position: relative;
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+  width: 100%;
+  border-top: 1px solid var(--career-line);
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 2px solid $background-color;
+    border-radius: 50%;
+    background: var(--career-line);
+    transform: translate(-50%, -50%);
+  }
+}
+
+.career-era--current .career-branches--left .career-node--branch,
+.career-era--transition .career-node--branch,
+.career-era--oxford .career-branches--right .career-node--branch,
+.career-era--oxford .career-branches--left .career-node--branch {
+  display: flex;
+  min-height: 7rem;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.career-era--current .career-branches--left .career-node--branch::after,
+.career-era--transition .career-branches--left .career-node--branch::after,
+.career-era--transition .career-branches--right .career-node--branch::before,
+.career-era--oxford .career-branches--left .career-node--branch::after,
+.career-era--oxford .career-branches--right .career-node--branch::before {
+  top: 50%;
+}
+
+.career-era--oxford .career-branches--left,
+.career-era--oxford .career-branches--right {
+  grid-template-rows: repeat(2, minmax(7rem, 1fr));
+  gap: 0.5rem;
+  align-self: stretch;
+}
+
+.career-node__date {
+  margin-top: 0.4rem !important;
+  color: $gray;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.015em;
+}
+
+.career-node__unit,
+.career-node__role,
+.career-node__location,
+.career-node__detail {
+  color: $dark-gray;
+  font-size: 0.925rem;
+  line-height: 1.4;
+}
+
+.career-node__unit {
+  margin-top: 0.3rem !important;
+  color: $gray;
+  font-size: 0.875rem;
+}
+
+.career-node__location {
+  color: $gray;
+}
+
+.career-node__detail {
+  margin-top: 0.55rem !important;
+  color: $gray;
+  font-size: 0.82rem;
+}
+
+.career-node__detail-label {
+  color: $dark-gray;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .career-node__logo-link {
+    transition: none;
+  }
+}
+
+@include breakpoint(max-width $medium-wide) {
+  .career-timeline {
+    box-sizing: border-box;
+    width: calc(100vw - 1.25rem);
+    max-width: calc(100vw - 1.25rem);
+    margin-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 0.75rem;
+
+    &::before {
+      left: 0.45rem;
+      transform: none;
+    }
+
+    &::after {
+      left: 0.45rem;
+      transform: translateX(-40%);
+    }
+  }
+
+  .career-era {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+    margin-bottom: 2.5rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1rem;
+      left: -1.94rem;
+      width: 0.75rem;
+      height: 0.75rem;
+      border: 2px solid $background-color;
+      border-radius: 50%;
+      background: var(--career-node);
+    }
+  }
+
+  .career-era--transition {
+    min-height: 0;
+    margin-bottom: 2.5rem;
+  }
+
+  .career-transition__junction {
+    display: none;
+  }
+
+  .career-node--main {
+    order: 1;
+    margin-right: 1rem;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .career-branches {
+    display: grid;
+    gap: 0.85rem;
+    margin-right: 1rem;
+  }
+
+  .career-branches--right {
+    order: 2;
+  }
+
+  .career-branches--left {
+    order: 3;
+  }
+
+  .career-era--transition .career-branches--left {
+    order: 2;
+  }
+
+  .career-era--transition .career-branches--right {
+    order: 3;
+  }
+
+  .career-branches--left,
+  .career-branches--right {
+    .career-node--branch {
+      padding: 0.7rem 0 0.7rem 1rem;
+      border-right: 0;
+      border-left: 2px solid var(--career-line);
+      text-align: left;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    .career-node__logo-heading {
+      text-align: left;
+    }
+  }
+
+  .career-node--ongoing {
+    border-left-color: var(--career-line) !important;
+  }
+
+  .career-era--current .career-branches--left .career-node--branch,
+  .career-era--transition .career-node--branch,
+  .career-era--oxford .career-branches--right .career-node--branch,
+  .career-era--oxford .career-branches--left .career-node--branch {
+    display: block;
+    min-height: 0;
+  }
+
+  .career-era--oxford .career-branches--left,
+  .career-era--oxford .career-branches--right {
+    grid-template-rows: none;
+    gap: 0.85rem;
+    align-self: auto;
+  }
+}
+
+@include breakpoint(max-width $small) {
+  .career-node__logo-link--main {
+    max-width: 42vw;
+  }
+
+  .career-node__logo-link--branch,
+  .career-node__logo-link--branch-wide,
+  .career-node__logo-link--branch-tall {
+    max-width: 34vw;
+  }
+}
