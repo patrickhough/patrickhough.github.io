@@ -51,7 +51,7 @@ author:
   avatar           : "patrickhough.png"
   bio              : "Postdoctoral Researcher in Cryptography"
   location         : "Munich, Germany"
-  employer         : "PACY / Research Institute CODE<br>Universität der Bundeswehr München"
+  employer         : '<a href="https://www.unibw.de/pacy-en" style="display:inline;">PACY</a> / <a href="https://www.unibw.de/code-en" style="display:inline;">Research Institute CODE</a><br>Universität der Bundeswehr München'
   googlescholar    : "https://scholar.google.com/citations?hl=en&user=EM27SWAAAAAJ"
   orcid            : "https://orcid.org/0000-0003-4037-5512"
   email            : "patrickhough@pm.me"
