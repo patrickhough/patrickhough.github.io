@@ -27,7 +27,7 @@ author_profile: true
             <img class="career-node__logo career-node__logo--hcvc" src="{{ '/images/logos/hcvc.png' | relative_url }}" alt="HCVC">
           </a>
         </h3>
-        <p class="career-node__role">Fellow (Cryptography Consultant)</p>
+        <p class="career-node__role">VC Fellow (Cryptography Consultant)</p>
         <p class="career-node__date">2026</p>
       </article>
     </div>
