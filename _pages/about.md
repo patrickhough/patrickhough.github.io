@@ -13,7 +13,7 @@ My research focuses on post-quantum cryptography and privacy-preserving protocol
 
 I am also interested in applications including electronic voting, confidential computing, secure multiparty computation, and privacy-enhancing technologies more broadly.
 
-I received my DPhil in Mathematics from the University of Oxford, where my research focused on lattice-based privacy-preserving protocols with distributed trust.
+I received my DPhil in Mathematics from the University of Oxford, where my <a href="/DPhil%20thesis.pdf" target="_blank" rel="noopener noreferrer">thesis</a> focused on lattice-based privacy-preserving protocols with distributed trust.
 
 ## Recent News
 
