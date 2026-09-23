@@ -48,7 +48,7 @@ atom_feed:
 # Site Author
 author:
   name             : "Patrick Hough"
-  avatar           : "patrickhough.png"
+  avatar           : "patrickhough.jpg"
   bio              : "Postdoctoral Researcher in Cryptography"
   location         : "Munich, Germany"
   employer         : '<a href="https://www.unibw.de/pacy-en" style="display:inline;">PACY</a> / <a href="https://www.unibw.de/code-en" style="display:inline;">Research Institute CODE</a><br>Universität der Bundeswehr München'
