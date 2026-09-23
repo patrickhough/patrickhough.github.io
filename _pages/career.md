@@ -135,7 +135,8 @@ author_profile: true
         <p class="career-node__role">MSc Mathematics for Cryptography</p>
         <p class="career-node__date">2016-2017</p>
       </div>
-    </article>
+            <p class="career-node__detail"><strong>Thesis:</strong> <em>Lattice-Based Cryptosystems For The Post-Quantum Era</em></p>
+</article>
   </section>
 
   <section class="career-era career-era--root" aria-label="Undergraduate degree">
