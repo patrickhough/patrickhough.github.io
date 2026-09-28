@@ -35,13 +35,16 @@
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i> University Profile</a></li>
       {% endif %}
       {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a></li>
+        <li><a href="{{ author.googlescholar }}"><img class="author__logo" src="{{ '/images/logos/google%20scholar.webp' | relative_url }}" alt="" aria-hidden="true"> Google Scholar</a></li>
+      {% endif %}
+      {% if author.dblp %}
+        <li><a href="{{ author.dblp }}"><img class="author__logo" src="{{ '/images/logos/dblp.webp' | relative_url }}" alt="" aria-hidden="true"> DBLP</a></li>
       {% endif %}
       {% if author.github %}
         <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
       {% endif %}
       {% if author.orcid %}
-        <li><a href="{{ author.orcid }}"><i class="ai ai-orcid-square ai-fw" aria-hidden="true"></i> ORCID</a></li>
+        <li><a href="{{ author.orcid }}"><img class="author__logo" src="{{ '/images/logos/orcid.gif' | relative_url }}" alt="" aria-hidden="true"> ORCID</a></li>
       {% endif %}
       {% if author.linkedin %}
         <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
