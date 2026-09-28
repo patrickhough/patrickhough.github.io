@@ -3,6 +3,9 @@ layout: archive
 title: "Research"
 permalink: /research/
 author_profile: true
+redirect_from:
+  - /academicactivities
+  - /academicactivities/
 ---
 
 My research develops cryptographic protocols that remain secure in a post-quantum setting and distribute trust and power among several participants. I am particularly interested in constructions that are both provably secure and practical enough for real systems.

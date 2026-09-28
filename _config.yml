@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Patrick Hough"
+title                    : "Patrick Hough | Cryptography Researcher"
 title_separator          : "-"
 name                     : &name "Patrick Hough"
-description              : &description "Postdoctoral Researcher in Cryptography"
+description              : &description "Patrick Hough is a cryptography researcher working on post-quantum and lattice-based cryptography, threshold signatures, distributed key generation and privacy-preserving protocols."
 url                      : "https://patrick-hough.com"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "patrickhough/patrickhough.github.io"
@@ -59,6 +59,17 @@ author:
   github           : "patrickhough"
   linkedin         : "patrickhough"
   uri              : "https://www.unibw.de/pacy-en/team/patrick-hough-ph-d"
+
+social:
+  type               : "Person"
+  name               : "Patrick Hough"
+  links:
+    - "https://scholar.google.com/citations?hl=en&user=EM27SWAAAAAJ"
+    - "https://dblp.org/pid/220/3002.html"
+    - "https://orcid.org/0000-0003-4037-5512"
+    - "https://github.com/patrickhough"
+    - "https://www.linkedin.com/in/patrickhough"
+    - "https://www.unibw.de/pacy-en/team/patrick-hough-ph-d"
 
 # Reading Files
 include:
