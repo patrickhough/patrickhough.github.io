@@ -19,6 +19,8 @@ I received my DPhil in Mathematics from the University of Oxford, where my <a hr
 
 ### 2026
 
+- *PQCSA [workshop](https://www.esat.kuleuven.be/cosic/events/pqcsa-workshop-bonn-2026/) on NIST Standards, Libraries and Migration Strategy.<br>[COSIC](https://www.esat.kuleuven.be/cosic/), KU Leuven.*
+
 - [Distributed Key Generation for NTRU](https://eprint.iacr.org/2026/1854) will appear at [CANS 2026](https://uow-ic2.github.io/cans2026/reg.html).
 - [Olingo: Threshold Lattice Signatures with DKG and Identifiable Abort](https://eprint.iacr.org/2025/1789) will appear at [ACM CCS 2026](https://www.sigsac.org/ccs/CCS2026/).
 - Mentor for the [UK Quantum Hackathon 2026](https://www.nqcc.ac.uk/uk-quantum-hackathon-2026/).
